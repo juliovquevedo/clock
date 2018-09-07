@@ -11,20 +11,19 @@
         <div id="root"></div>
         
         <script type="text/babel">
-            function clock () {
-                var d = new Date();
-                var element = 
-                <div>
-                <h1>World Clock</h1>
+        function clock () {
+            var d = new Date();
+            var element = 
+            <div>
                 <h1>{document.getElementById("root").innerHTML = d.toLocaleTimeString()}</h1>
-                </div>
-                    
-                ReactDOM.render(
-                    element,
-                    document.getElementById("root")
-                )
-            }
-            setInterval(clock, 1000);
+            </div>
+
+            ReactDOM.render(
+                element,
+                document.getElementById("root")
+            )
+        }
+        setInterval(clock, 1000);
         </script>
     </body>
 </html>
